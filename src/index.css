@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Font used: Poppins, Oswald; */
+
+:root {
+    font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+    color: white;
+    background: #eeb644;
+}

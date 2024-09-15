@@ -48,7 +48,6 @@ const Navbar = () => {
                     Home
                 </Link>
             </li>
-
             <li>
                 <Link
                     className='hover:bg-transparent hover:text-[#eeb644] transition duration-300'

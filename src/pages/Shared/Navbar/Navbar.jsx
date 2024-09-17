@@ -122,7 +122,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className='drawer drawer-end z-50'>
+            <div className='drawer z-50'>
                 <input
                     id='my-drawer'
                     type='checkbox'
@@ -132,14 +132,9 @@ const Navbar = () => {
                 />
                 <div className='drawer-content flex flex-col'>
                     {/* Navbar */}
+                    {/* Hamburger Menu Icon */}
                     <div className='w-full navbar bg-white'>
-                        <div className='flex-1 px-2 mx-2 text-2xl font-bold font-[Oswald]'>
-                            <span className='text-[#eeb644]'>Velocity</span>
-                            Tech
-                        </div>
-                        {/* mobile menu button here */}
-                        <div className='lg:hidden md:block'>{profile}</div>
-                        <div className='flex-none lg:hidden'>
+                        <div className='flex lg:hidden'>
                             <label
                                 htmlFor='my-drawer'
                                 aria-label='open sidebar'
@@ -160,6 +155,13 @@ const Navbar = () => {
                                 </svg>
                             </label>
                         </div>
+                        {/* Logo */}
+                        <div className='flex-1 px-2 mx-2 text-2xl font-bold font-[Oswald]'>
+                            <span className='text-[#eeb644]'>Velocity</span>
+                            Tech
+                        </div>
+                        {/* profile here */}
+                        <div className='lg:hidden md:block'>{profile}</div>
 
                         <div className='flex-none hidden lg:block'>
                             <ul className='menu font-medium menu-horizontal text-[16px] items-center'>
@@ -178,10 +180,10 @@ const Navbar = () => {
                         className='drawer-overlay'
                     ></label>
                     <ul className='menu p-4 w-80 min-h-full bg-base-200'>
-                        <div className='flex justify-end'>
+                        <div className='flex'>
                             <button
                                 onClick={closeSidebar}
-                                className='btn btn-square btn-ghost -mt-2 -me-2'
+                                className='btn btn-square btn-ghost -mt-2 -ms-2'
                             >
                                 <svg
                                     xmlns='http://www.w3.org/2000/svg'

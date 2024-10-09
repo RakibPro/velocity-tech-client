@@ -3,9 +3,13 @@ import { Pagination, Navigation } from 'swiper/modules';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import { motion } from 'framer-motion';
 
-// Banner Images
+// Slider Images
 import slider1 from '../../../../assets/slider/slider-1.jpg';
 import slider2 from '../../../../assets/slider/slider-2.jpg';
+// Banner Images
+import banner1 from '../../../../assets/banner/banner-1.jpg';
+import banner2 from '../../../../assets/banner/banner-2.jpg';
+import banner3 from '../../../../assets/banner/banner-3.jpg';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -67,6 +71,7 @@ const Banner = () => {
                                             delay: slide.delay,
                                             duration: 0.7,
                                         }}
+                                        viewport={{ once: true }}
                                         className='text-2xl md:text-4xl text-secondary mb-1 md:mb-4'
                                     >
                                         {slide.title}
@@ -78,6 +83,7 @@ const Banner = () => {
                                             delay: slide.delay + 0.1,
                                             duration: 0.7,
                                         }}
+                                        viewport={{ once: true }}
                                         className='text-4xl md:text-7xl text-secondary font-semibold mb-1 md:mb-4'
                                     >
                                         {slide.subtitle}
@@ -89,6 +95,7 @@ const Banner = () => {
                                             delay: slide.delay + 0.2,
                                             duration: 0.7,
                                         }}
+                                        viewport={{ once: true }}
                                         className='text-4xl md:text-7xl text-secondary font-semibold mb-4 md:mb-6'
                                     >
                                         {slide.description}
@@ -100,6 +107,7 @@ const Banner = () => {
                                             delay: slide.delay + 0.3,
                                             duration: 0.7,
                                         }}
+                                        viewport={{ once: true }}
                                     >
                                         <span className='btn bg-secondary px-5 md:px-8 text-base md:text-lg text-[#1b1b1c] rounded-full hover:bg-primary hover:text-white border-none transition-all duration-500'>
                                             SHOP NOW
@@ -127,6 +135,60 @@ const Banner = () => {
                     <IoIosArrowForward className='w-4 h-4 md:w-7 md:h-7 pl-[2px]' />
                 </button>
             </Swiper>
+            {/* Banner Images */}
+            <div className='md:flex justify-center items-center m-10'>
+                {/* Banner 1 */}
+                <motion.div
+                    initial={{ y: 50, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{
+                        delay: 0.3,
+                        duration: 0.7,
+                    }}
+                    viewport={{ once: true }}
+                    className='overflow-hidden md:ml-8'
+                >
+                    <img
+                        src={banner1}
+                        alt='Banner'
+                        className='cursor-pointer object-cover transition-all duration-500 hover:scale-110'
+                    />
+                </motion.div>
+                {/* Banner 2 */}
+                <motion.div
+                    initial={{ y: 50, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{
+                        delay: 0.4,
+                        duration: 0.7,
+                    }}
+                    viewport={{ once: true }}
+                    className='overflow-hidden m-8'
+                >
+                    <img
+                        src={banner2}
+                        alt='Banner'
+                        className='cursor-pointer object-cover transition-all duration-500 hover:scale-110'
+                    />
+                </motion.div>
+                {/* Banner 3 */}
+                <motion.div
+                    initial={{ y: 50, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{
+                        delay: 0.5,
+                        duration: 0.7,
+                    }}
+                    viewport={{ once: true }}
+                    className='overflow-hidden mr-8'
+                >
+                    <img
+                        src={banner3}
+                        alt='Banner'
+                        className='cursor-pointer object-cover transition-all duration-500 hover:scale-110'
+                    />
+                </motion.div>
+            </div>
         </div>
     );
 };

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-// import { FaCircleUser } from 'react-icons/fa6';
+import { FaCircleUser } from 'react-icons/fa6';
 
 const Navbar = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -17,7 +17,7 @@ const Navbar = () => {
         <>
             <li>
                 <Link
-                    className='hover:bg-transparent hover:text-[#eeb644] transition duration-300'
+                    className='hover:bg-transparent hover:text-primary transition duration-300'
                     to='/'
                 >
                     Home
@@ -25,40 +25,7 @@ const Navbar = () => {
             </li>
             <li>
                 <Link
-                    className='hover:bg-transparent hover:text-[#eeb644] transition duration-300'
-                    to='/'
-                >
-                    Home
-                </Link>
-            </li>
-
-            <li>
-                <Link
-                    className='hover:bg-transparent hover:text-[#eeb644] transition duration-300'
-                    to='/'
-                >
-                    Home
-                </Link>
-            </li>
-            <li>
-                <Link
-                    className='hover:bg-transparent hover:text-[#eeb644] transition duration-300'
-                    to='/'
-                >
-                    Home
-                </Link>
-            </li>
-            <li>
-                <Link
-                    className='hover:bg-transparent hover:text-[#eeb644] transition duration-300'
-                    to='/'
-                >
-                    Home
-                </Link>
-            </li>
-            <li>
-                <Link
-                    className='hover:bg-transparent hover:text-[#eeb644] transition duration-300'
+                    className='hover:bg-transparent hover:text-primary transition duration-300'
                     to='/'
                 >
                     Home
@@ -67,7 +34,40 @@ const Navbar = () => {
 
             <li>
                 <Link
-                    className='hover:bg-transparent hover:text-[#eeb644] transition duration-300'
+                    className='hover:bg-transparent hover:text-primary transition duration-300'
+                    to='/'
+                >
+                    Home
+                </Link>
+            </li>
+            <li>
+                <Link
+                    className='hover:bg-transparent hover:text-primary transition duration-300'
+                    to='/'
+                >
+                    Home
+                </Link>
+            </li>
+            <li>
+                <Link
+                    className='hover:bg-transparent hover:text-primary transition duration-300'
+                    to='/'
+                >
+                    Home
+                </Link>
+            </li>
+            <li>
+                <Link
+                    className='hover:bg-transparent hover:text-primary transition duration-300'
+                    to='/'
+                >
+                    Home
+                </Link>
+            </li>
+
+            <li>
+                <Link
+                    className='hover:bg-transparent hover:text-primary transition duration-300'
                     to='/'
                 >
                     Home
@@ -85,11 +85,7 @@ const Navbar = () => {
                     className='btn btn-ghost btn-circle avatar'
                 >
                     <div className='w-10 rounded-full'>
-                        {/* <FaCircleUser className='text-3xl mx-auto' /> */}
-                        <img
-                            alt='Profile Photo'
-                            src='https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg'
-                        />
+                        <FaCircleUser className='text-3xl mx-auto h-full' />
                     </div>
                 </div>
                 <ul
@@ -156,10 +152,13 @@ const Navbar = () => {
                             </label>
                         </div>
                         {/* Logo */}
-                        <div className='flex-1 px-2 mx-2 text-2xl font-bold font-[Oswald]'>
-                            <span className='text-[#eeb644]'>Velocity</span>
+                        <Link
+                            className='flex-1 px-2 mx-2 text-2xl font-bold font-oswald cursor-pointer'
+                            to='/'
+                        >
+                            <span className='text-primary'>Velocity</span>
                             Tech
-                        </div>
+                        </Link>
                         {/* profile here */}
                         <div className='lg:hidden md:block'>{profile}</div>
 

@@ -36,7 +36,7 @@ const slides = [
 
 const Banner = () => {
     return (
-        <div className='relative'>
+        <section className='relative'>
             <Swiper
                 slidesPerView={1}
                 spaceBetween={0}
@@ -63,7 +63,7 @@ const Banner = () => {
                                 }`}
                             />
                             <div className='flex justify-center'>
-                                <div className='title-content text-center md:text-left absolute z-10 text-white top-[30%] md:left-28 font-oswald'>
+                                <div className='title-content text-center md:text-left absolute z-10 text-white top-[30%] md:left-[10%] font-oswald'>
                                     <motion.h3
                                         initial={{ y: 20, opacity: 0 }}
                                         whileInView={{ opacity: 1, y: 0 }}
@@ -71,8 +71,7 @@ const Banner = () => {
                                             delay: slide.delay,
                                             duration: 0.7,
                                         }}
-                                        viewport={{ once: true }}
-                                        className='text-2xl md:text-4xl text-secondary mb-1 md:mb-4'
+                                        className='text-2xl md:text-4xl text-secondary mb-2 md:mb-4'
                                     >
                                         {slide.title}
                                     </motion.h3>
@@ -83,8 +82,7 @@ const Banner = () => {
                                             delay: slide.delay + 0.1,
                                             duration: 0.7,
                                         }}
-                                        viewport={{ once: true }}
-                                        className='text-4xl md:text-7xl text-secondary font-semibold mb-1 md:mb-4'
+                                        className='text-4xl md:text-7xl text-secondary font-semibold mb-2 md:mb-4'
                                     >
                                         {slide.subtitle}
                                     </motion.h1>
@@ -95,8 +93,7 @@ const Banner = () => {
                                             delay: slide.delay + 0.2,
                                             duration: 0.7,
                                         }}
-                                        viewport={{ once: true }}
-                                        className='text-4xl md:text-7xl text-secondary font-semibold mb-4 md:mb-6'
+                                        className='text-4xl md:text-7xl text-secondary font-semibold mb-5 md:mb-7'
                                     >
                                         {slide.description}
                                     </motion.h1>
@@ -107,7 +104,6 @@ const Banner = () => {
                                             delay: slide.delay + 0.3,
                                             duration: 0.7,
                                         }}
-                                        viewport={{ once: true }}
                                     >
                                         <span className='btn bg-secondary px-5 md:px-8 text-base md:text-lg text-[#1b1b1c] rounded-full hover:bg-primary hover:text-white border-none transition-all duration-500'>
                                             SHOP NOW
@@ -135,61 +131,64 @@ const Banner = () => {
                     <IoIosArrowForward className='w-4 h-4 md:w-7 md:h-7 pl-[2px]' />
                 </button>
             </Swiper>
+
             {/* Banner Images */}
-            <div className='md:flex justify-center items-center m-10'>
-                {/* Banner 1 */}
-                <motion.div
-                    initial={{ y: 50, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{
-                        delay: 0.3,
-                        duration: 0.7,
-                    }}
-                    viewport={{ once: true }}
-                    className='overflow-hidden md:ml-8'
-                >
-                    <img
-                        src={banner1}
-                        alt='Banner'
-                        className='cursor-pointer object-cover transition-all duration-500 hover:scale-110'
-                    />
-                </motion.div>
-                {/* Banner 2 */}
-                <motion.div
-                    initial={{ y: 50, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{
-                        delay: 0.4,
-                        duration: 0.7,
-                    }}
-                    viewport={{ once: true }}
-                    className='overflow-hidden m-8'
-                >
-                    <img
-                        src={banner2}
-                        alt='Banner'
-                        className='cursor-pointer object-cover transition-all duration-500 hover:scale-110'
-                    />
-                </motion.div>
-                {/* Banner 3 */}
-                <motion.div
-                    initial={{ y: 50, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{
-                        delay: 0.5,
-                        duration: 0.7,
-                    }}
-                    viewport={{ once: true }}
-                    className='overflow-hidden mr-8'
-                >
-                    <img
-                        src={banner3}
-                        alt='Banner'
-                        className='cursor-pointer object-cover transition-all duration-500 hover:scale-110'
-                    />
-                </motion.div>
+            <div className='md:w-[88%] mx-3 md:mx-auto my-10 mb-16 '>
+                <div className='md:flex justify-center items-center'>
+                    {/* Banner 1 */}
+                    <motion.div
+                        initial={{ y: 80, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{
+                            delay: 0.3,
+                            duration: 1,
+                        }}
+                        viewport={{ once: true }}
+                        className='overflow-hidden'
+                    >
+                        <img
+                            src={banner1}
+                            alt='Banner'
+                            className='cursor-pointer object-cover transition-all duration-500 hover:scale-110'
+                        />
+                    </motion.div>
+                    {/* Banner 2 */}
+                    <motion.div
+                        initial={{ y: 80, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{
+                            delay: 0.4,
+                            duration: 1,
+                        }}
+                        viewport={{ once: true }}
+                        className='overflow-hidden my-8 md:my-0 md:mx-4 lg:mx-6'
+                    >
+                        <img
+                            src={banner2}
+                            alt='Banner'
+                            className='cursor-pointer object-cover transition-all duration-500 hover:scale-110'
+                        />
+                    </motion.div>
+                    {/* Banner 3 */}
+                    <motion.div
+                        initial={{ y: 80, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{
+                            delay: 0.5,
+                            duration: 1,
+                        }}
+                        viewport={{ once: true }}
+                        className='overflow-hidden'
+                    >
+                        <img
+                            src={banner3}
+                            alt='Banner'
+                            className='cursor-pointer object-cover transition-all duration-500 hover:scale-110'
+                        />
+                    </motion.div>
+                </div>
             </div>
-        </div>
+        </section>
     );
 };
 

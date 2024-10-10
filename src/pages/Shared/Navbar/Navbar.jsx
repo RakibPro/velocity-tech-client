@@ -117,7 +117,7 @@ const Navbar = () => {
     );
 
     return (
-        <div>
+        <nav className='lg:w-[88%] mx-auto'>
             <div className='drawer z-50'>
                 <input
                     id='my-drawer'
@@ -153,7 +153,7 @@ const Navbar = () => {
                         </div>
                         {/* Logo */}
                         <Link
-                            className='flex-1 px-2 mx-2 text-2xl font-bold font-oswald cursor-pointer'
+                            className='flex-1 text-2xl font-bold font-oswald cursor-pointer'
                             to='/'
                         >
                             <span className='text-primary'>Velocity</span>
@@ -202,7 +202,7 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
-        </div>
+        </nav>
     );
 };
 

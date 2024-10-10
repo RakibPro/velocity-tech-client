@@ -11,14 +11,14 @@ const Services = () => {
             <section className='w-[88%] justify-center md:flex mx-auto mb-96'>
                 {/* Service 1 */}
                 <motion.div
-                    initial={{ x: -100, opacity: 0 }}
+                    initial={{ x: -50, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{
                         delay: 0.5,
                         duration: 1,
                     }}
                     viewport={{ once: true }}
-                    className='lg:flex justify-center items-center mx-auto mb-7 md:m-0'
+                    className='lg:flex justify-center items-center mx-auto mb-7 md:m-0 overflow-hidden'
                 >
                     {/* Image */}
                     <img
@@ -39,7 +39,21 @@ const Services = () => {
                 </motion.div>
 
                 {/* Divider */}
-                <div className='hidden lg:block h-20 w-[1px] bg-gray-400'></div>
+                <motion.div
+                    initial={{
+                        scale: 3,
+                        opacity: 0,
+                    }}
+                    whileInView={{
+                        scale: 1,
+                        opacity: 1,
+                    }}
+                    transition={{
+                        delay: 0.7,
+                        duration: 1,
+                    }}
+                    className='hidden lg:block h-20 w-[1px] bg-gray-400'
+                ></motion.div>
 
                 {/* Service 2 */}
                 <motion.div
@@ -69,18 +83,32 @@ const Services = () => {
                 </motion.div>
 
                 {/* Divider */}
-                <div className='hidden lg:block h-20 w-[1px] bg-gray-400'></div>
+                <motion.div
+                    initial={{
+                        scale: 3,
+                        opacity: 0,
+                    }}
+                    whileInView={{
+                        scale: 1,
+                        opacity: 1,
+                    }}
+                    transition={{
+                        delay: 1,
+                        duration: 1,
+                    }}
+                    className='hidden lg:block h-20 w-[1px] bg-gray-400'
+                ></motion.div>
 
                 {/* Service 3 */}
                 <motion.div
-                    initial={{ x: 100, opacity: 0 }}
+                    initial={{ x: 50, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{
                         delay: 0.5,
                         duration: 1,
                     }}
                     viewport={{ once: true }}
-                    className='lg:flex justify-center items-center mx-auto mb-7 md:m-0'
+                    className='lg:flex justify-center items-center mx-auto mb-7 md:m-0 overflow-hidden'
                 >
                     {/* Image */}
                     <img

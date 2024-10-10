@@ -156,8 +156,7 @@ const Navbar = () => {
                             className='flex-1 text-2xl font-bold font-oswald cursor-pointer'
                             to='/'
                         >
-                            <span className='text-primary'>Velocity</span>
-                            Tech
+                            <span className='text-primary'>Velocity</span>Tech
                         </Link>
                         {/* profile here */}
                         <div className='lg:hidden md:block'>{profile}</div>

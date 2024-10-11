@@ -7,10 +7,10 @@ import service3 from '../../../assets/services/icon-3.png';
 
 const Services = () => {
     return (
-        <section className='w-[88%] xl:w-[80%] justify-center md:flex mx-auto mb-16'>
+        <section className='w-[88%] xl:w-[80%] justify-center md:flex mx-auto mb-16 overflow-hidden'>
             {/* Service 1 */}
             <motion.div
-                initial={{ x: -50, opacity: 0 }}
+                initial={{ x: -150, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{
                     delay: 0.5,
@@ -100,7 +100,7 @@ const Services = () => {
 
             {/* Service 3 */}
             <motion.div
-                initial={{ x: 40, opacity: 0 }}
+                initial={{ x: 150, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{
                     delay: 0.5,

@@ -137,11 +137,11 @@ const Banner = () => {
                 <div className='md:flex justify-center items-center'>
                     {/* Banner 1 */}
                     <motion.div
-                        initial={{ y: 80, opacity: 0 }}
+                        initial={{ y: 100, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{
                             delay: 0.3,
-                            duration: 1,
+                            duration: 0.8,
                         }}
                         viewport={{ once: true }}
                         className='overflow-hidden'
@@ -154,11 +154,11 @@ const Banner = () => {
                     </motion.div>
                     {/* Banner 2 */}
                     <motion.div
-                        initial={{ y: 80, opacity: 0 }}
+                        initial={{ y: 100, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{
                             delay: 0.4,
-                            duration: 1,
+                            duration: 0.8,
                         }}
                         viewport={{ once: true }}
                         className='overflow-hidden my-8 md:my-0 md:mx-4 lg:mx-9'
@@ -171,11 +171,11 @@ const Banner = () => {
                     </motion.div>
                     {/* Banner 3 */}
                     <motion.div
-                        initial={{ y: 80, opacity: 0 }}
+                        initial={{ y: 100, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{
                             delay: 0.5,
-                            duration: 1,
+                            duration: 0.8,
                         }}
                         viewport={{ once: true }}
                         className='overflow-hidden'

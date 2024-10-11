@@ -18,6 +18,7 @@ export default {
                 poppins: ['Poppins'],
             },
             backgroundImage: {
+                car: "url('/src/assets/car/bg-car.jpg')",
                 discount: "url('/src/assets/discount/bg-discount.jpg')",
             },
         },

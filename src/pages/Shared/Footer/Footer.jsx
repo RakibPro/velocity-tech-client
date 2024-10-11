@@ -1,9 +1,23 @@
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
-    const services = ['Branding', 'Design', 'Marketing', 'Advertisement'];
-    const company = ['About us', 'Contact', 'Jobs', 'Press kit'];
-    const legal = ['Terms of use', 'Privacy policy', 'Cookie policy'];
+    const serviceLinks = [
+        { path: '/branding', name: 'Branding' },
+        { path: '/design', name: 'Design' },
+        { path: '/marketing', name: 'Marketing' },
+        { path: '/advertisement', name: 'Advertisement' },
+    ];
+    const companyLinks = [
+        { path: '/branding', name: 'About us' },
+        { path: '/design', name: 'Contact' },
+        { path: '/marketing', name: 'Jobs' },
+        { path: '/advertisement', name: 'Press kit' },
+    ];
+    const legalLinks = [
+        { path: '/branding', name: 'Terms of use' },
+        { path: '/design', name: 'Privacy policy' },
+        { path: '/marketing', name: 'Cookie policy' },
+    ];
 
     const renderLinks = (title, links) => (
         <nav>
@@ -13,9 +27,10 @@ const Footer = () => {
             {links.map((link, index) => (
                 <Link
                     key={index}
+                    to={link.path}
                     className='hover:text-primary transition-all duration-300 hover:translate-x-2'
                 >
-                    {link}
+                    {link.name}
                 </Link>
             ))}
         </nav>
@@ -33,15 +48,15 @@ const Footer = () => {
                         <span className='text-primary'>Velocity</span>Tech
                     </Link>
                     <p>
-                        ACME Industries Ltd.
+                        Rakib Industries Ltd.
                         <br />
-                        Providing reliable tech since 1992
+                        Providing reliable tech since 1999
                     </p>
                 </aside>
                 {/* Footer Links */}
-                {renderLinks('Services', services)}
-                {renderLinks('Company', company)}
-                {renderLinks('Legal', legal)}
+                {renderLinks('Services', serviceLinks)}
+                {renderLinks('Company', companyLinks)}
+                {renderLinks('Legal', legalLinks)}
             </div>
             {/* Copyright */}
             <aside className='flex justify-center items-center bg-black text-white h-16'>

@@ -26,9 +26,9 @@ const Navbar = () => {
             <li>
                 <Link
                     className='hover:bg-transparent hover:text-primary transition duration-300'
-                    to='/'
+                    to='/about'
                 >
-                    Home
+                    About
                 </Link>
             </li>
 
@@ -117,7 +117,7 @@ const Navbar = () => {
     );
 
     return (
-        <nav className='lg:w-[88%] mx-auto'>
+        <nav className='lg:w-[88%] xl:w-[80%] mx-auto'>
             <div className='drawer z-50'>
                 <input
                     id='my-drawer'
@@ -161,7 +161,7 @@ const Navbar = () => {
                         {/* profile here */}
                         <div className='lg:hidden md:block'>{profile}</div>
 
-                        <div className='flex-none hidden lg:block'>
+                        <div className='flex-none hidden lg:block uppercase'>
                             <ul className='menu font-medium menu-horizontal text-[16px] items-center'>
                                 {/* Nav links here */}
                                 {menuItems}

@@ -4,12 +4,12 @@ import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import { motion } from 'framer-motion';
 
 // Slider Images
-import slider1 from '../../../../assets/slider/slider-1.jpg';
-import slider2 from '../../../../assets/slider/slider-2.jpg';
+import slider1 from '../../../assets/slider/slider-1.jpg';
+import slider2 from '../../../assets/slider/slider-2.jpg';
 // Banner Images
-import banner1 from '../../../../assets/banner/banner-1.jpg';
-import banner2 from '../../../../assets/banner/banner-2.jpg';
-import banner3 from '../../../../assets/banner/banner-3.jpg';
+import banner1 from '../../../assets/banner/banner-1.jpg';
+import banner2 from '../../../assets/banner/banner-2.jpg';
+import banner3 from '../../../assets/banner/banner-3.jpg';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -133,7 +133,7 @@ const Banner = () => {
             </Swiper>
 
             {/* Banner Images */}
-            <div className='md:w-[88%] mx-3 md:mx-auto my-10 mb-16 '>
+            <div className='md:w-[88%] xl:w-[80%] mx-3 md:mx-auto my-10 mb-16'>
                 <div className='md:flex justify-center items-center'>
                     {/* Banner 1 */}
                     <motion.div
@@ -161,7 +161,7 @@ const Banner = () => {
                             duration: 1,
                         }}
                         viewport={{ once: true }}
-                        className='overflow-hidden my-8 md:my-0 md:mx-4 lg:mx-6'
+                        className='overflow-hidden my-8 md:my-0 md:mx-4 lg:mx-9'
                     >
                         <img
                             src={banner2}

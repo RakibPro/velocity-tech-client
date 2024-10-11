@@ -15,6 +15,10 @@ export default {
             },
             fontFamily: {
                 oswald: ['Oswald'],
+                poppins: ['Poppins'],
+            },
+            backgroundImage: {
+                discount: "url('/src/assets/discount/bg-discount.jpg')",
             },
         },
     },

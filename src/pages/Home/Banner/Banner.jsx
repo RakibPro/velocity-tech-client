@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 // Slider Images
 import slider1 from '../../../assets/slider/slider-1.jpg';
 import slider2 from '../../../assets/slider/slider-2.jpg';
+import slider3 from '../../../assets/slider/slider-3.jpg';
 // Banner Images
 import banner1 from '../../../assets/banner/banner-1.jpg';
 import banner2 from '../../../assets/banner/banner-2.jpg';
@@ -31,7 +32,13 @@ const slides = [
         description: 'COLLECTIONS',
         delay: 0.2,
     },
-    // Add more slides as needed
+    {
+        image: slider3,
+        title: 'NEW TECHNOLOGY & BUILD 2',
+        subtitle: 'WHEELS & TIRES',
+        description: 'COLLECTIONS',
+        delay: 0.2,
+    },
 ];
 
 const Banner = () => {
@@ -63,7 +70,7 @@ const Banner = () => {
                                 }`}
                             />
                             <div className='flex justify-center'>
-                                <div className='title-content text-center md:text-left absolute z-10 text-white top-[30%] md:left-[10%] font-oswald'>
+                                <div className='title-content text-center md:text-left absolute z-10 text-white top-[30%] md:left-[6%] xl:left-[10%] font-oswald'>
                                     <motion.h3
                                         initial={{ y: 20, opacity: 0 }}
                                         whileInView={{ opacity: 1, y: 0 }}
@@ -117,7 +124,7 @@ const Banner = () => {
 
                 {/* Previous Button */}
                 <button
-                    className='prev-slide absolute p-3 rounded-full text-white bg-[rgba(0,0,0,0.2)] hover:bg-primary grid items-center left-8 md:left-14 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer transition-all duration-500 opacity-0 group-hover:opacity-100'
+                    className='hidden prev-slide absolute p-3 rounded-full text-white bg-[rgba(0,0,0,0.2)] hover:bg-primary lg:grid items-center left-8 md:left-10 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer transition-all duration-500 opacity-0 group-hover:opacity-100'
                     aria-label='Previous Slide'
                 >
                     <IoIosArrowBack className='w-4 h-4 md:w-7 md:h-7 pr-[2px]' />
@@ -125,7 +132,7 @@ const Banner = () => {
 
                 {/* Next Button */}
                 <button
-                    className='next-slide absolute p-3 rounded-full text-white bg-[rgba(0, 0, 0, 0.2)] hover:bg-primary grid items-center right-8 md:right-14 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer transition-all duration-500 opacity-0 group-hover:opacity-100'
+                    className='hidden next-slide absolute p-3 rounded-full text-white bg-[rgba(0, 0, 0, 0.2)] hover:bg-primary lg:grid items-center right-8 md:right-10 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer transition-all duration-500 opacity-0 group-hover:opacity-100'
                     aria-label='Next Slide'
                 >
                     <IoIosArrowForward className='w-4 h-4 md:w-7 md:h-7 pl-[2px]' />
@@ -133,7 +140,7 @@ const Banner = () => {
             </Swiper>
 
             {/* Banner Images */}
-            <div className='md:w-[88%] xl:w-[80%] mx-3 md:mx-auto my-10 mb-16'>
+            <div className='flex justify-center md:w-[88%] xl:w-[80%] mx-3 md:mx-auto my-10 mb-16'>
                 <div className='md:flex justify-center items-center'>
                     {/* Banner 1 */}
                     <motion.div
@@ -141,7 +148,7 @@ const Banner = () => {
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{
                             delay: 0.3,
-                            duration: 0.8,
+                            duration: 0.7,
                         }}
                         viewport={{ once: true }}
                         className='overflow-hidden'
@@ -158,7 +165,7 @@ const Banner = () => {
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{
                             delay: 0.4,
-                            duration: 0.8,
+                            duration: 0.7,
                         }}
                         viewport={{ once: true }}
                         className='overflow-hidden my-8 md:my-0 md:mx-4 lg:mx-9'
@@ -175,7 +182,7 @@ const Banner = () => {
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{
                             delay: 0.5,
-                            duration: 0.8,
+                            duration: 0.7,
                         }}
                         viewport={{ once: true }}
                         className='overflow-hidden'

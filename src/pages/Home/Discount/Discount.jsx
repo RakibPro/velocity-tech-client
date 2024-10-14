@@ -42,7 +42,7 @@ const Discount = () => {
     }, []);
 
     return (
-        <section className='bg-discount bg-cover bg-center bg-no-repeat flex justify-center items-center h-[740px] md:h-[500px] lg:h-[550px]'>
+        <section className='bg-discount bg-cover bg-center bg-no-repeat flex justify-center items-center h-[740px] md:h-[500px] lg:h-[550px] overflow-hidden'>
             <div className='w-[95%] md:w-[85%] lg:w-[80%] xl:w-[65%] md:flex justify-between items-center text-[#1b1b1c]'>
                 <motion.div
                     initial={{
@@ -55,7 +55,7 @@ const Discount = () => {
                     }}
                     transition={{
                         delay: 0.3,
-                        duration: 0.8,
+                        duration: 0.7,
                     }}
                     viewport={{ once: true }}
                     className='flex justify-center'
@@ -68,11 +68,11 @@ const Discount = () => {
                 </motion.div>
                 <div className='text-center font-oswald font-bold'>
                     <motion.h2
-                        initial={{ x: 80, opacity: 0 }}
+                        initial={{ x: 150, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
                         transition={{
                             delay: 0.3,
-                            duration: 0.8,
+                            duration: 0.7,
                         }}
                         viewport={{ once: true }}
                         className='text-[40px] my-3'
@@ -80,11 +80,11 @@ const Discount = () => {
                         FLASH DEALS
                     </motion.h2>
                     <motion.h3
-                        initial={{ x: 80, opacity: 0 }}
+                        initial={{ x: 150, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
                         transition={{
                             delay: 0.4,
-                            duration: 0.8,
+                            duration: 0.7,
                         }}
                         viewport={{ once: true }}
                         className='text-[32px]'
@@ -94,11 +94,11 @@ const Discount = () => {
                         DISCOUNT
                     </motion.h3>
                     <motion.button
-                        initial={{ x: 80, opacity: 0 }}
+                        initial={{ x: 150, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
                         transition={{
                             delay: 0.5,
-                            duration: 0.8,
+                            duration: 0.7,
                         }}
                         viewport={{ once: true }}
                         className='font-oswald my-8'
@@ -111,11 +111,11 @@ const Discount = () => {
                         </Link>
                     </motion.button>
                     <motion.div
-                        initial={{ x: 80, opacity: 0 }}
+                        initial={{ x: 150, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
                         transition={{
                             delay: 0.6,
-                            duration: 0.8,
+                            duration: 0.7,
                         }}
                         viewport={{ once: true }}
                         className='text-4xl font-poppins font-semibold text-[#303030]'

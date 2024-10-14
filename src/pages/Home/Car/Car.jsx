@@ -13,7 +13,7 @@ const Car = () => {
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{
                         delay: 0.5,
-                        duration: 0.8,
+                        duration: 0.7,
                     }}
                     viewport={{ once: true }}
                     className='text-center space-y-5 pt-20'
@@ -35,7 +35,7 @@ const Car = () => {
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{
                         delay: 0.5,
-                        duration: 0.8,
+                        duration: 0.7,
                     }}
                     viewport={{ once: true }}
                     className='flex justify-center'

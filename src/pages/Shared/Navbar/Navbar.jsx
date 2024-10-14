@@ -17,7 +17,7 @@ const Navbar = () => {
         <>
             <li>
                 <Link
-                    className='hover:bg-transparent hover:text-primary transition duration-300'
+                    className='hover:bg-transparent hover:text-primary transition duration-300 px-4 py-2 inline-block'
                     to='/'
                 >
                     Home
@@ -25,7 +25,7 @@ const Navbar = () => {
             </li>
             <li>
                 <Link
-                    className='hover:bg-transparent hover:text-primary transition duration-300'
+                    className='hover:bg-transparent hover:text-primary transition duration-300 px-4 py-2 inline-block'
                     to='/about'
                 >
                     About
@@ -34,7 +34,7 @@ const Navbar = () => {
 
             <li>
                 <Link
-                    className='hover:bg-transparent hover:text-primary transition duration-300'
+                    className='hover:bg-transparent hover:text-primary transition duration-300 px-4 py-2 inline-block'
                     to='/'
                 >
                     Home
@@ -42,7 +42,7 @@ const Navbar = () => {
             </li>
             <li>
                 <Link
-                    className='hover:bg-transparent hover:text-primary transition duration-300'
+                    className='hover:bg-transparent hover:text-primary transition duration-300 px-4 py-2 inline-block'
                     to='/'
                 >
                     Home
@@ -50,7 +50,7 @@ const Navbar = () => {
             </li>
             <li>
                 <Link
-                    className='hover:bg-transparent hover:text-primary transition duration-300'
+                    className='hover:bg-transparent hover:text-primary transition duration-300 px-4 py-2 inline-block'
                     to='/'
                 >
                     Home
@@ -58,7 +58,7 @@ const Navbar = () => {
             </li>
             <li>
                 <Link
-                    className='hover:bg-transparent hover:text-primary transition duration-300'
+                    className='hover:bg-transparent hover:text-primary transition duration-300 px-4 py-2 inline-block'
                     to='/'
                 >
                     Home
@@ -67,7 +67,7 @@ const Navbar = () => {
 
             <li>
                 <Link
-                    className='hover:bg-transparent hover:text-primary transition duration-300'
+                    className='hover:bg-transparent hover:text-primary transition duration-300 px-4 py-2 inline-block'
                     to='/'
                 >
                     Home
@@ -162,7 +162,7 @@ const Navbar = () => {
                         <div className='lg:hidden md:block'>{profile}</div>
 
                         <div className='flex-none hidden lg:block uppercase'>
-                            <ul className='menu font-medium menu-horizontal text-[16px] items-center'>
+                            <ul className='font-medium menu-horizontal text-[16px] items-center p-2'>
                                 {/* Nav links here */}
                                 {menuItems}
                                 {profile}
@@ -177,7 +177,7 @@ const Navbar = () => {
                         aria-label='close sidebar'
                         className='drawer-overlay'
                     ></label>
-                    <ul className='menu p-4 w-80 min-h-full bg-base-200'>
+                    <ul className='p-4 w-80 min-h-full bg-base-200'>
                         <div className='flex'>
                             <button
                                 onClick={closeSidebar}

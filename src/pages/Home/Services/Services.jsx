@@ -14,10 +14,10 @@ const Services = () => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{
                     delay: 0.5,
-                    duration: 1,
+                    duration: 0.7,
                 }}
                 viewport={{ once: true }}
-                className='lg:flex justify-center items-center mx-auto mb-7 md:m-0 overflow-hidden'
+                className='lg:flex justify-center items-center mx-auto mb-7 md:m-0'
             >
                 {/* Image */}
                 <img
@@ -35,19 +35,13 @@ const Services = () => {
                 </div>
             </motion.div>
 
-            {/* Divider */}
+            {/* Divider 1 */}
             <motion.div
-                initial={{
-                    scale: 3,
-                    opacity: 0,
-                }}
-                whileInView={{
-                    scale: 1,
-                    opacity: 1,
-                }}
+                initial={{ y: -80, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
                 transition={{
-                    delay: 0.7,
-                    duration: 1,
+                    delay: 0.5,
+                    duration: 0.7,
                 }}
                 viewport={{ once: true }}
                 className='hidden lg:block h-20 w-[1px] bg-gray-400'
@@ -55,11 +49,24 @@ const Services = () => {
 
             {/* Service 2 */}
             <motion.div
-                initial={{ y: 50, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
+                // initial={{ y: 80, opacity: 0 }}
+                // whileInView={{ y: 0, opacity: 1 }}
+                // transition={{
+                //     delay: 0.5,
+                //     duration: 0.7,
+                // }}
+                // viewport={{ once: true }}
+                initial={{
+                    scale: 0,
+                    opacity: 0,
+                }}
+                whileInView={{
+                    scale: 1,
+                    opacity: 1,
+                }}
                 transition={{
-                    delay: 0.5,
-                    duration: 1,
+                    delay: 0.3,
+                    duration: 0.7,
                 }}
                 viewport={{ once: true }}
                 className='lg:flex justify-center items-center mx-auto mb-7 md:m-0'
@@ -80,19 +87,13 @@ const Services = () => {
                 </div>
             </motion.div>
 
-            {/* Divider */}
+            {/* Divider 2 */}
             <motion.div
-                initial={{
-                    scale: 3,
-                    opacity: 0,
-                }}
-                whileInView={{
-                    scale: 1,
-                    opacity: 1,
-                }}
+                initial={{ y: 80, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
                 transition={{
-                    delay: 1,
-                    duration: 1,
+                    delay: 0.5,
+                    duration: 0.7,
                 }}
                 viewport={{ once: true }}
                 className='hidden lg:block h-20 w-[1px] bg-gray-400'
@@ -104,7 +105,7 @@ const Services = () => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{
                     delay: 0.5,
-                    duration: 1,
+                    duration: 0.7,
                 }}
                 viewport={{ once: true }}
                 className='lg:flex justify-center items-center mx-auto mb-7 md:m-0 overflow-hidden'

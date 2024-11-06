@@ -18,5 +18,9 @@
 .swiper-horizontal > .section-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
     .swiper-pagination-bullet {
-    @apply bg-secondary;
+    @apply bg-secondary lg:h-[10px] lg:w-[10px];
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    @apply flex justify-center lg:justify-start mb-3 lg:ml-[7%] lg:mb-[12%] xl:ml-[11%] xl:mb-[10%];
 }

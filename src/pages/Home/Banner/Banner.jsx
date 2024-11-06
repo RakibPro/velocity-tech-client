@@ -34,7 +34,7 @@ const slides = [
     },
     {
         image: slider3,
-        title: 'NEW TECHNOLOGY & BUILD 2',
+        title: 'NEW TECHNOLOGY & BUILD 3',
         subtitle: 'WHEELS & TIRES',
         description: 'COLLECTIONS',
         delay: 0.2,

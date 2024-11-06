@@ -35,9 +35,9 @@ const Navbar = () => {
             <li>
                 <Link
                     className='hover:bg-transparent hover:text-primary transition duration-300 px-4 py-2 inline-block'
-                    to='/'
+                    to='/products'
                 >
-                    Home
+                    Products
                 </Link>
             </li>
             <li>
@@ -107,7 +107,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link className='transition duration-300' to='/'>
+                        <Link className='transition duration-300' to='/login'>
                             Login
                         </Link>
                     </li>
@@ -129,7 +129,7 @@ const Navbar = () => {
                 <div className='drawer-content flex flex-col'>
                     {/* Navbar */}
                     {/* Hamburger Menu Icon */}
-                    <div className='w-full navbar bg-white'>
+                    <div className='w-full navbar lg:px-0 bg-white'>
                         <div className='flex lg:hidden'>
                             <label
                                 htmlFor='my-drawer'
